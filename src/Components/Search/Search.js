@@ -10,10 +10,8 @@ function Search() {
           <div className="row">
             <div className="col-sm-12 align-self-center">
               <h1 className="App">KonFhub</h1>
-              <AwesomeButton type="secondary">
-                <Link to="/search">Search</Link>
-              </AwesomeButton>
             </div>
+            <input type="text" />
           </div>
         </div>
       </div>
