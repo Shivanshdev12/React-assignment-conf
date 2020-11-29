@@ -1,0 +1,9 @@
+img.size {
+    width: 250px;
+    height: 150px;
+    max-width: 100%;
+}
+
+div.card {
+    border: 1px solid rgba(0, 0, 0, 0.325);
+}
