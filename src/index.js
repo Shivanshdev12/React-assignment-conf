@@ -6,10 +6,12 @@ import App from "../src/App";
 import reportWebVitals from "./reportWebVitals";
 
 import { Route, IndexRoute, Router, browserHistory } from "react-router";
+import Search from "./Components/Search/Search";
 
 const router = (
   <Router history={browserHistory}>
     <Route path="/" component={App}></Route>
+    <Route path="/search" component={Search} />
   </Router>
 );
 

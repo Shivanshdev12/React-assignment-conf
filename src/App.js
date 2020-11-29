@@ -1,12 +1,14 @@
 import React, { Component } from "react";
+import { AwesomeButton } from "react-awesome-button";
+import { Link } from "react-router";
 
 //import css
 import "./App.css";
+import "react-awesome-button/dist/styles.css";
 
 //import components
-import View from "./Components/View/View";
-import { Navbar, Nav } from "react-bootstrap";
-import Header from "./Components/Header";
+import Free from "./Components/Free/Free";
+import Paid from "./Components/Paid/Paid";
 
 class App extends Component {
   state = {
@@ -27,12 +29,16 @@ class App extends Component {
           <div className="container">
             <div className="row">
               <div className="col-sm-12 align-self-center">
-                <h1>KonFhub</h1>
+                <h1 className="App">KonFhub</h1>
+                <AwesomeButton type="secondary">
+                  <Link to="/search">Search</Link>
+                </AwesomeButton>
               </div>
             </div>
           </div>
         </div>
-        <View events={this.state.events} />
+        <Free events={this.state.events} />
+        <Paid events={this.state.events} />
       </React.Fragment>
     );
   }

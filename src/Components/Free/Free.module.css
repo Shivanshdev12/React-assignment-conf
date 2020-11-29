@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+img.size {
+    width: 300px;
+    height: 200px;
+    max-width: 100%;
+}
+
+div.card {
+    border: 1px solid rgba(0, 0, 0, 0.325);
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
