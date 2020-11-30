@@ -27,9 +27,11 @@ class App extends Component {
     return (
       <React.Fragment>
         <Header />
-        <AwesomeButton type="secondary">
-          <Link to="/search">Search</Link>
-        </AwesomeButton>
+        <div className="container align-self-center mb-5">
+          <AwesomeButton type="secondary">
+            <Link to="/search">Search</Link>
+          </AwesomeButton>
+        </div>
         <Free events={this.state.events} />
         <Paid events={this.state.events} />
       </React.Fragment>
