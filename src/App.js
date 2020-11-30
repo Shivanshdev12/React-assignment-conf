@@ -9,6 +9,7 @@ import "react-awesome-button/dist/styles.css";
 //import components
 import Free from "./Components/Free/Free";
 import Paid from "./Components/Paid/Paid";
+import Header from "./Components/Header/Header";
 
 class App extends Component {
   state = {
@@ -25,18 +26,10 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="jumbotron">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-12 align-self-center">
-                <h1 className="App">KonFhub</h1>
-                <AwesomeButton type="secondary">
-                  <Link to="/search">Search</Link>
-                </AwesomeButton>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Header />
+        <AwesomeButton type="secondary">
+          <Link to="/search">Search</Link>
+        </AwesomeButton>
         <Free events={this.state.events} />
         <Paid events={this.state.events} />
       </React.Fragment>

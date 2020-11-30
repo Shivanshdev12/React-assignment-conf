@@ -1,5 +1,36 @@
-.footer {
-    background-color: #d1c4e9;
-    margin: 0px auto;
-    padding: 20px 0px 20px 0px;
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+img.size {
+    width: 420px;
+    height: 200px;
+    max-width: 100%;
+}
+
+div.card {
+    border: 1px solid rgba(0, 0, 0, 0.325);
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h3 {
+    text-align: center;
+}
+
+button.btn.btn-primary {
+    text-align: center;
+    /* margin: 0 auto;
+display: block; */
+}
+
+div>input {
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid #000;
+}
+
+div.input {
+    text-align: center;
 }

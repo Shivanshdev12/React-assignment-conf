@@ -3,6 +3,7 @@ import styles from "./Free.module.css";
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 
+//remove extra quotes from imageURL
 function remove(str) {
   var t = str.length;
   if (str.charAt(0) == '"') str = str.substring(1, t--);
@@ -10,6 +11,7 @@ function remove(str) {
   return str;
 }
 
+//Component Free
 const Free = (props) => {
   if (!props.events.paid)
     return (
